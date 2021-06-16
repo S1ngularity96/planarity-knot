@@ -24,10 +24,6 @@
     "type": "git",
     "url": "git+https://github.com/nkhem/planarity_knot.git"
   },
-  "engines": {
-    "node": "6.2.1",
-    "npm": "4.4.4"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
