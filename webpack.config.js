@@ -1,7 +1,8 @@
 module.exports = {
+  mode: 'development',
   entry: "./lib/planarity_knot.js",
   output: {
-    filename: "./dist/bundle.js"
+    filename: "bundle.js"
   },
   devtool: 'source-map',
   resolve: {

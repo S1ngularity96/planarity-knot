@@ -1,58 +1,65 @@
 <html>
-  <head>
-    <title>Planarity Knot</title>
-    <script type="application/javascript" src="lib/bundle.js"></script>
-    <script src="https://use.fontawesome.com/3d3793b3fc.js"></script>
-    <script src="https://use.fontawesome.com/e92e4139d6.js"></script>
-    <script src="https://use.fontawesome.com/47341d5263.js"></script>
-    <script src="https://use.fontawesome.com/a399d9f659.js"></script>
-    <script src="https://use.fontawesome.com/02364801d0.js"></script>
-    <script src="https://use.fontawesome.com/962abb45e2.js"></script>
-    <script src="https://use.fontawesome.com/21b9a4dd7b.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style/reset.css">
-    <link rel="stylesheet" type="text/css" href="./style/planarity_knot.css">
-  </head>
 
-  <body>
-    <h1>Planarity Knot</h1>
-    <h3>A Nicole Hemenway production</h3>
-    <div id="root">
-      <div class="instructions-modal">
-        <div class="instructions-box">
-          <h2>Instructions</h2>
-          <div class="instructions">
-            <p>Trivia Fact: A graph is planar when none of its lines intersect.</p>
-            <p>Your Task: To create a planar graph.</p>
-            <p>But How: Drag the dots until none of the lines intersect.</p>
-            <p>Enjoy! <i class="fa fa-hand-spock-o" aria-hidden="true"></i></p>
-          </div>
-          <button id="play-btn">Got it</button>
+<head>
+  <title>Planarity Knot</title>
+  <script type="application/javascript" src="./dist/bundle.js"></script>
+  <script src="https://use.fontawesome.com/3d3793b3fc.js"></script>
+  <script src="https://use.fontawesome.com/e92e4139d6.js"></script>
+  <script src="https://use.fontawesome.com/47341d5263.js"></script>
+  <script src="https://use.fontawesome.com/a399d9f659.js"></script>
+  <script src="https://use.fontawesome.com/02364801d0.js"></script>
+  <script src="https://use.fontawesome.com/962abb45e2.js"></script>
+  <script src="https://use.fontawesome.com/21b9a4dd7b.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style/reset.css">
+  <link rel="stylesheet" type="text/css" href="./style/planarity_knot.css">
+</head>
+
+<body>
+  <h1>Planarity Knot</h1>
+  <h3>A Nicole Hemenway production</h3>
+  <div id="root">
+    <div class="instructions-modal">
+      <div class="instructions-box">
+        <h2>Instructions</h2>
+        <div class="instructions">
+          <p>Trivia Fact: A graph is planar when none of its lines intersect.</p>
+          <p>Your Task: To create a planar graph.</p>
+          <p>But How: Drag the dots until none of the lines intersect.</p>
+          <p>Enjoy! <i class="fa fa-hand-spock-o" aria-hidden="true"></i></p>
         </div>
-      </div>
-      <div id="level">Level: 1</div>
-      <div id="score">Score: 0</div>
-      <div id="move-count">Moves: 0</div>
-      <div id="elapsed-time">Time: 0</div>
-      <button class="hidden" id="level-up-btn" /></button>
-      <div class="icons">
-        <i class="fa fa-repeat" aria-hidden="true"></i>
-        <i class="fa fa-backward" aria-hidden="true"></i>
-        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-        <a href="https://github.com/nkhem/planarity-knot" target="_blank">
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nkhem/" target="_blank">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="icon-captions">
-        <p class="fa-repeat-caption hidden">Reset level</p>
-        <p class="fa-backward-caption hidden">New game</p>
-        <p class="fa-question-circle-o-caption hidden">Instructions</p>
-        <p class="fa-github-caption hidden">View on GitHub</p>
-        <p class="fa-linkedin-caption hidden">View my LinkedIn</p>
+        <button id="play-btn">Got it</button>
       </div>
     </div>
-    <canvas id="canvas"></canvas>
-  </body>
+    <div id="level">Level: 1</div>
+    <div id="score">Score: 0</div>
+    <div id="move-count">Moves: 0</div>
+    <div id="elapsed-time">Time: 0</div>
+    <button class="hidden" id="level-up-btn" /></button>
+    <div class="levels">
+      <button class="btn-level1">Level 1</button>
+      <button class="btn-level2">Level 2</button>
+    </div>
+
+    <div class="icons">
+      <i class="fa fa-repeat" aria-hidden="true"></i>
+      <i class="fa fa-backward" aria-hidden="true"></i>
+      <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+      <a href="https://github.com/nkhem/planarity-knot" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/nkhem/" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="icon-captions">
+      <p class="fa-repeat-caption hidden">Reset level</p>
+      <p class="fa-backward-caption hidden">New game</p>
+      <p class="fa-question-circle-o-caption hidden">Instructions</p>
+      <p class="fa-github-caption hidden">View on GitHub</p>
+      <p class="fa-linkedin-caption hidden">View my LinkedIn</p>
+    </div>
+  </div>
+  <canvas id="canvas"></canvas>
+</body>
+
 </html>

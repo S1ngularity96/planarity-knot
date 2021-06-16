@@ -1,5 +1,9 @@
-#level, #score, #move-count, #elapsed-time {
-  color: #B1E0C0;
+#level,
+#score,
+#move-count,
+#elapsed-time {
+  display: none;
+  color: #b1e0c0;
   position: fixed;
   right: 60px;
 }
@@ -31,12 +35,13 @@ button {
   text-transform: lowercase;
   text-align: center;
   border-radius: 5px;
-	transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   cursor: pointer;
-  background-color: #4448AF;
+  background-color: #4448af;
 }
 
 #level-up-btn {
+  display: none;
   z-index: 1;
   color: #101010;
   position: fixed;
@@ -45,8 +50,8 @@ button {
 }
 
 button:hover {
-  background-color: #352CB3;
-  border-color: #352CB3;
+  background-color: #352cb3;
+  border-color: #352cb3;
 }
 
 .instructions-modal {
@@ -56,7 +61,7 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .instructions-box {
@@ -71,7 +76,7 @@ button:hover {
   padding: 30px;
   background-color: rgba(161, 174, 227, 0.94);
   border-radius: 5px;
-  border: 1px solid #352CB3;
+  border: 1px solid #352cb3;
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,13 +96,13 @@ button:hover {
   height: 130px;
 }
 
-.instructions p{
+.instructions p {
   text-align: center;
 }
 
 i.fa-hand-spock-o {
   font-size: 20px;
-  color: #101010
+  color: #101010;
 }
 
 .icons {
@@ -108,34 +113,53 @@ i.fa-hand-spock-o {
   bottom: 135px;
 }
 
+.levels {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 30px;
+  top: 60px;
+}
+
 .fa-repeat-caption,
 .fa-backward-caption,
 .fa-question-circle-o-caption,
 .fa-github-caption,
 .fa-linkedin-caption {
   position: fixed;
-  color: #352CB3;
+  color: #352cb3;
   z-index: 1;
   left: 95px;
 }
 
-.fa-repeat-caption {bottom: 260px;}
-.fa-backward-caption {bottom: 229px;}
-.fa-question-circle-o-caption {bottom: 199px;}
-.fa-github-caption {bottom: 167px;}
-.fa-linkedin-caption {bottom: 135px;}
+.fa-repeat-caption {
+  bottom: 260px;
+}
+.fa-backward-caption {
+  bottom: 229px;
+}
+.fa-question-circle-o-caption {
+  bottom: 199px;
+}
+.fa-github-caption {
+  bottom: 167px;
+}
+.fa-linkedin-caption {
+  bottom: 135px;
+}
 
 .fa-question-circle-o,
 .fa-github,
 .fa-linkedin {
   font-size: 30px;
-  color: #B1E0C0;
+  color: #b1e0c0;
 }
 
-i.fa-repeat, i.fa-backward {
+i.fa-repeat,
+i.fa-backward {
   font-size: 24px;
   padding: 3px;
-  color: #B1E0C0;
+  color: #b1e0c0;
 }
 
 .fa-repeat:hover,
@@ -143,7 +167,7 @@ i.fa-repeat, i.fa-backward {
 .fa-question-circle-o:hover,
 .fa-github:hover,
 .fa-linkedin:hover {
-  color: #352CB3;
+  color: #352cb3;
   cursor: pointer;
 }
 
